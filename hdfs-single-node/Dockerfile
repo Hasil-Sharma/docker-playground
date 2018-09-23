@@ -5,7 +5,7 @@ EXPOSE 50070
 RUN apt-get update && \
  apt-get upgrade -y && \
  apt-get install -y ssh vim rsync aria2 openjdk-7-jdk && \
- aria2c -x 10 "http://apache.claz.org/hadoop/common/stable/hadoop-2.9.0.tar.gz" && \
+ aria2c -x 10 "http://apache.claz.org/hadoop/common/hadoop-2.9.0/hadoop-2.9.0.tar.gz" && \
  tar -xf hadoop-2.9.0.tar.gz && \
  rm -rf hadoop-2.9.0.tar.gz && \
  echo "set nu" >> ~/.vimrc && \
